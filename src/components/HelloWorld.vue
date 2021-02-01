@@ -18,13 +18,20 @@
     </div>
   </div>
   <ul class="icons">
-    <li>
-      <a src="Cordelia.guims.cv.dev.pdf" class="icon brands fa-cv"
-      target="_blank"><span class="label">CV</span></a>
+    <li class="fileElem">
+      <a
+        src="./img/Cordelia.guims.cv.dev.pdf"
+        class="icon brands fa-cv"
+        target="_blank"
+        ><span class="label">CV</span></a
+      >
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/cordelia-aurelie-guims-de-medeiros-10955a110/" class="icon brands fa-linkedin-f"
-        target="_blank"><span class="label">linkedin</span></a
+      <a
+        href="https://www.linkedin.com/in/cordelia-aurelie-guims-de-medeiros-10955a110/"
+        class="icon brands fa-linkedin-f"
+        target="_blank"
+        ><span class="label">linkedin</span></a
       >
     </li>
     <li>
@@ -33,7 +40,10 @@
       >
     </li>
     <li>
-      <a href="https://github.com/Cordelia013" class="icon brands fa-github" target="_blank"
+      <a
+        href="https://github.com/Cordelia013"
+        class="icon brands fa-github"
+        target="_blank"
         ><span class="label">GitHub</span></a
       >
     </li>
@@ -41,15 +51,29 @@
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
   },
 };
-</script>
+// function load(){
+// let fileSelect = document.querySelector('fa-cv');
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+// let fileElem = document.querySelector('fileElem');
+
+// fileSelect.addEventListener('click', function (ev) {
+// if (fileElem) {
+//   fileElem.click(),
+// ev.preventDefault(),
+//   }
+// }),false};
+
+// </script>
+
+// <!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 #header > * {
   // transition: opacity 0.325s ease-in-out;
@@ -188,41 +212,41 @@ a.router-link-active.router-link-exact-active {
   right: -10%;
 }
 .icon {
-    text-decoration: none;
-    border-bottom: none;
-        border-bottom-color: currentcolor;
-    position: relative;
+  text-decoration: none;
+  border-bottom: none;
+  border-bottom-color: currentcolor;
+  position: relative;
 }
 ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 3rem;
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 3rem;
 }
 ul.icons li {
-    display: inline-block;
-   padding: 0 1.5em 0 0;
+  display: inline-block;
+  padding: 0 1.5em 0 0;
 }
 ul.icons li a {
-    border-radius: 100%;
-    box-shadow: inset 0 0 0 1px #ffffff;
-    display: inline-block;
-    line-height:4rem;
-    text-align: center;
-    height: 4rem;
-    width: 4rem;
+  border-radius: 100%;
+  box-shadow: inset 0 0 0 1px #ffffff;
+  display: inline-block;
+  line-height: 4rem;
+  text-align: center;
+  height: 4rem;
+  width: 4rem;
 }
 a:hover {
-    border-bottom-color: transparent;
+  border-bottom-color: transparent;
 }
 ul.icons li a:hover {
-    background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(255, 255, 255, 0.075);
 }
 .fa-instagram {
- margin-left: 7rem;
+  margin-left: 7rem;
 }
 
 </style>
