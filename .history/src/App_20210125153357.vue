@@ -123,6 +123,18 @@ h6.titre {
   border-radius: 4px;
 }
 
+
+#projects,
+#services {
+  transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+  padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+  position: relative;
+  width: 46rem;
+  height: 56rem;
+  background-color: rgba(27, 31, 34, 0.85);
+  box-shadow: 12px 12px 24px #191c20, -12px -12px 24px #353e45;
+  border-radius: 4px;
+}
 #app {
   display: flex;
   flex-direction: column;

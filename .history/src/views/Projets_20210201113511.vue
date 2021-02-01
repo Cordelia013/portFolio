@@ -71,7 +71,7 @@
           </p>
         </section>
            <section class="card card7">
-          <h4> projet Immersive colab</h4>
+          <h4>stage</h4>
           <a href="https://hungry-ptolemy-f05569.netlify.app">
             <img src="/img/egghead.io.png " alt="Projets egghead.io" />
           </a>
@@ -79,17 +79,8 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, alias!
           </p>
         </section>
-         <section class="card card8">
-          <h4>Projet poney fringeant</h4>
-          <a href="https://hungry-ptolemy-f05569.netlify.app">
-            <img src="/img/egghead.io.png " alt="Projets egghead.io" />
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, alias!
-          </p>
-        </section>
-         <section class="card card8">
-          <h4>projet portFolio</h4>
+         <section class="card card7">
+          <h4>stage</h4>
           <a href="https://hungry-ptolemy-f05569.netlify.app">
             <img src="/img/egghead.io.png " alt="Projets egghead.io" />
           </a>

@@ -132,7 +132,7 @@ border-radius: 4px;
   background-color: rgba(27, 31, 34, 0.85);
   box-shadow: 12px 12px 24px #191c20, -12px -12px 24px #353e45;
   border-radius: 4px;
-
+  
   > img {
 width: 100%;
 }

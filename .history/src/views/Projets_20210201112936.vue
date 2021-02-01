@@ -22,7 +22,6 @@
 
         <section class="card card2">
           <h4>Projets Actutu</h4>
-          <br>
           <a href="https://friendly-nightingale-653f36.netlify.app">
             <img src="/img/actutu.png " alt="Projets Actutu" />
           </a>
@@ -45,51 +44,6 @@
 
         <section class="card card4">
           <h4>Projets egghead.io</h4>
-          <a href="https://hungry-ptolemy-f05569.netlify.app">
-            <img src="/img/egghead.io.png " alt="Projets egghead.io" />
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, alias!
-          </p>
-        </section>
-         <section class="card card5">
-          <h4>Projets café Florette</h4>
-          <a href="https://hungry-ptolemy-f05569.netlify.app">
-            <img src="/img/egghead.io.png " alt="Projets egghead.io" />
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, alias!
-          </p>
-        </section>
-         <section class="card card6">
-          <h4>agence immobilière</h4>
-          <a href="https://hungry-ptolemy-f05569.netlify.app">
-            <img src="/img/egghead.io.png " alt="Projets egghead.io" />
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, alias!
-          </p>
-        </section>
-           <section class="card card7">
-          <h4> projet Immersive colab</h4>
-          <a href="https://hungry-ptolemy-f05569.netlify.app">
-            <img src="/img/egghead.io.png " alt="Projets egghead.io" />
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, alias!
-          </p>
-        </section>
-         <section class="card card8">
-          <h4>Projet poney fringeant</h4>
-          <a href="https://hungry-ptolemy-f05569.netlify.app">
-            <img src="/img/egghead.io.png " alt="Projets egghead.io" />
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, alias!
-          </p>
-        </section>
-         <section class="card card8">
-          <h4>projet portFolio</h4>
           <a href="https://hungry-ptolemy-f05569.netlify.app">
             <img src="/img/egghead.io.png " alt="Projets egghead.io" />
           </a>
@@ -127,7 +81,6 @@ section{
 
   > img{
     width: 100%;
-    height: 7rem;
   }
 }
 
