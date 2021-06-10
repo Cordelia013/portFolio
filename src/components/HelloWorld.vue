@@ -1,8 +1,6 @@
 <template>
   <div id="header">
    <section class="stage">
-  <!-- <figure class="logo"><span class="shadow"></span> -->
-
 <svg viewBox="0 0 160 160" width="160" height="160">
   <circle cx="80" cy="80" r="50" />
   <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
@@ -13,8 +11,6 @@
   </g>
 <path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" />
 </svg>
-
-<!-- </figure> -->
 </section>
     <div class="content">
       <div class="text">
@@ -25,15 +21,11 @@
          Je travail principalement  avec des TPE/ PME, artisants, associations et créateurs.
 
         CMS, no-code, developpement front-end , back-end et intégation web. <br>
-        <!-- Vous pouvez trouver ici certaines mes differentes
-        <router-link to="/projets"> réalisations </router-link>. -->
 
       </p>
       </div>
     </div>
     <div class="nav_middle">
-      <!-- <router-link to="/">Home</router-link> | -->
-      <!-- <router-link to="/About">A propos</router-link> -->
       <router-link class="is-middle" to="/services">Mes services</router-link>
       <router-link to="/projets">Mes projets</router-link>
       <router-link to="/contact">Me contacter</router-link>
@@ -90,7 +82,7 @@ export default {
 #header > * {
   // transition: opacity 0.325s ease-in-out;
   position: relative;
-  margin-top: 3.5rem;
+  // margin-top: 3.5rem;
 }
 
 // #header > *::before {
@@ -120,8 +112,9 @@ export default {
 }
 // rond logo 3D
 .stage {
-  width: 17.5rem;
-height: 19.5rem;
+  top:4rem;
+  width: 16.5rem;
+  height: 19.5rem;
   display: inline-block;
   margin: 20px;
   perspective: 1200px;
@@ -174,7 +167,7 @@ height: 19.5rem;
   // transition: max-height 0.75s ease, padding 0.75s ease,
   //   opacity 0.325s ease-in-out;
   transition-delay: 0.25s;
-  padding: 3rem 2rem;
+  padding: 2rem 3rem;
   max-height: 40rem;
   overflow: hidden;
 }
@@ -195,6 +188,7 @@ h1 {
   filter: opacity(59%);
   -webkit-filter: opacity(59%);
   -moz-filter: opacity(59%);
+  margin-top: 17px;
 }
 #header .nav_middle a {
   display: block;

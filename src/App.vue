@@ -161,7 +161,7 @@ justify-content: space-between;
   justify-content: center;
   position: relative;
   min-height: 100vh;
-  width: 95vw;
+  width: 100vw;
   // z-index: 3;
 }
 
