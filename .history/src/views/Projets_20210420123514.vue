@@ -1,0 +1,102 @@
+<template>
+  <div class="body">
+    <article id="projets" style="" class="active">
+      <div class="modal-header">
+        <h2 class="titre">Mes projets</h2>
+        <router-link to="/">X</router-link>
+      </div>
+
+      <div class="grid-container">
+          <div id="myBtnContainer">
+      <router-link class  to="/About">ALL project</router-link>
+      <router-link to="/projets">Front-end</router-link>
+      <router-link to="/contact">FULLSTACK</router-link>
+      <router-link to="/projets">Mobile</router-link>
+       <router-link to="/projets">CMS</router-link>
+    </div>
+        <!-- <section class="card card1">
+          <h4>calendrier html/css</h4>
+          <a href="https://naughty-lamport-ded569.netlify.app">
+          <img src="/img/tableauHTML_CSS.png" alt="calendrier html/css"/>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+            ipsa.
+          </p>
+        </section> -->
+
+      </div>
+    </article>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 16px 21px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+section {
+  border: 1px solid black;
+
+  > h4,
+  p {
+    text-align: center;
+  }
+
+  > a {
+    > img {
+      width: 100%;
+      height: 7rem;
+    }
+  }
+}
+// boutton filtre
+
+#myBtnContainer {
+  display: flex;
+}
+.filterDiv {
+  background-color: #2196f3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  width: 5rem;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>

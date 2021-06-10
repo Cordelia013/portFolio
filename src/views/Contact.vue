@@ -1,57 +1,91 @@
 /* eslint-disable no-console */
 <template>
   <div class="body">
-     <article id="contact" style="" class="active">
-     <div class="modal-header ">
-          <h2 class="titre">Me contacter</h2>
-          <router-link to="/">X</router-link>
-
+    <article id="contact" style="" class="active">
+      <div class="modal-header">
+        <h2 class="titre">Me contacter</h2>
+        <router-link to="/">X</router-link>
       </div>
+      <!-- mise en place du formulaire -->
       <div class="sect-proj">
-<form action="" method="post">
-      <label for="name">Nom ou Dénomination sociale </label>
-      <input type="text" name="name" id="name" />
+        <form action="form.php" method="post" id="formContact">
+          <label for="name">denomination sociale</label>
+          <input v-model="entreprise" type="text" name="denomination" />
 
-      <label for="name">Prenom </label>
-      <input type="text" name="prenom" id="prenom" />
+          <label for="name">Nom</label>
+          <input v-model="nom" type="text" name="nom" />
 
-      <label for="name">Telephone </label>
-      <input type="tel" name="tel" id="tel" />
+          <label for="name">Prenom </label>
+          <input v-model="Prenom" type="text" name="prenom" />
 
-      <label for="name">Email </label>
-      <input type="email" name="mail" id="mail" />
+          <label for="name">Telephone </label>
+          <input v-model="tel" type="tel" name="tel" />
 
-      <ul class="actions">
-        <li><button>Envoyer</button></li>
-      </ul>
-    </form>
-    </div>
+          <label for="name">Email </label>
+          <input v-model="email" type="email" name="email" />
+
+          <label class="label" for="textarea">Message with Counter</label>
+            <textarea
+              class="message"
+              name="textarea"
+              id="textarea"
+              required=""
+              v-model="message" type="text"/>
+          <!-- <span class="counter">{{ message.text.length }} / {{ message.maxlength }}</span> -->
+            <ul class="actions">
+            <input type="submit" value="envoyer" @click="vald" />
+          </ul>
+        </form>
+      </div>
     </article>
   </div>
 </template>
 
 <script>
-// export default {
-//   data: () => {
-//     return {
-//       mailEnvoye: false,
-//       professionnel: false,
-//     };
-//   },
-//   methods: {
-//     envoiFormulaire() {
-//       console.log('envoi du form');
-//       // alert('coincoin')
-//       fetch('https://api.asciiparait.fr/contact.php')
-//         .then(response => response.json())
-//         .then(data () => {
-//           // Afficher que l'on a bien envoyé le message
-//         });
-//       this.mailEnvoye = true;
-//     },
-//   },
-// };
+export default {
+  name: 'form',
 
+  data: () => ({
+
+    errors: [],
+    entreprise: undefined,
+    nom: undefined,
+    prenom: undefined,
+    tel: Number,
+    email: undefined,
+    message: undefined,
+  }),
+
+  methods: {
+    vald(e) {
+      e.preventDefault();
+      if (
+        (this.entreprise || (this.nom && this.prenom))
+&& this.tel
+&& this.email
+&& this.message
+      ) {
+        return true;
+      }
+
+      this.errors = [];
+
+      if ((!this.nom && !this.prenom) || !this.entreprise) {
+        this.errors.push("merci d'ajouter votre nom ou dénomination sociale.");
+      }
+      if (!this.tel) {
+        this.errors.push('contact required.');
+      }
+      if (!this.email) {
+        this.errors.push('email required.');
+      }
+      if (!this.message) {
+        this.errors.push('message required.');
+      }
+      return true;
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -64,15 +98,15 @@ body {
   width: calc(100% + 3rem);
   margin: -1.5rem 0 2rem -1.5rem;
 }
-#contact {
-  transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-  padding: 4.5rem 2.5rem 1.5rem 2.5rem;
-  position: relative;
-  width: 40rem;
-  max-width: 100%;
-  background-color: rgba(27, 31, 34, 0.85);
-  border-radius: 4px;
-}
+// #contact {
+//   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+//   padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+//   position: relative;
+//   width: 40rem;
+//   max-width: 100%;
+//   background-color: rgba(27, 31, 34, 0.85);
+//   border-radius: 4px;
+// }
 .sect-contact {
   width: calc(50% - 0.75rem);
   flex-grow: 0;
@@ -114,7 +148,7 @@ ul.actions li > button.active {
 }
 ul.actions li > button.inactive {
   color: #888;
-  background:var( --color-hover-button);
+  background: var(--color-hover-button);
 }
 ul.actions li > button:hover {
   cursor: pointer;

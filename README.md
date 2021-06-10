@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install
+nvm use 14.16.1
 ```
 
 ### Compiles and hot-reloads for development

@@ -1,29 +1,52 @@
 <template>
   <div id="header">
-    <div class="logo">
-      <span class="icon fa-gem"></span>
-    </div>
+   <section class="stage">
+  <!-- <figure class="logo"><span class="shadow"></span> -->
+
+<svg viewBox="0 0 160 160" width="160" height="160">
+  <circle cx="80" cy="80" r="50" />
+  <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+    <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#FFF">
+  <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="3s"
+  repeatCount="indefinite" />
+    </path>
+  </g>
+<path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" />
+</svg>
+
+<!-- </figure> -->
+</section>
     <div class="content">
       <div class="text">
         <h1>{{ msg }}</h1>
-        <h2>DEVELOPPEUSE WEB ET WEB MOBILE FULLSTACK ET CMS WORDPRESS</h2>
+        <h2>DEVELOPPEUSE WEB ET WEB MOBILE ET CMS WORDPRESS</h2>
+         <h2>Freelance</h2>
+          <p>
+         Je travail principalement  avec des TPE/ PME, artisants, associations et créateurs.
+
+        CMS, no-code, developpement front-end , back-end et intégation web. <br>
+        <!-- Vous pouvez trouver ici certaines mes differentes
+        <router-link to="/projets"> réalisations </router-link>. -->
+
+      </p>
       </div>
     </div>
     <div class="nav_middle">
       <!-- <router-link to="/">Home</router-link> | -->
-      <router-link to="/About">A propos</router-link>
+      <!-- <router-link to="/About">A propos</router-link> -->
       <router-link class="is-middle" to="/services">Mes services</router-link>
       <router-link to="/projets">Mes projets</router-link>
       <router-link to="/contact">Me contacter</router-link>
     </div>
-  </div>
-  <ul class="icons">
-    <li class="fileElem">
+
+<ul class="icons">
+<li >
       <a
-        src="./img/Cordelia.guims.cv.dev.pdf"
+        href="../img/Cordelia guims.cv.CDC3.pdf"
         class="icon brands fa-cv"
         target="_blank"
-        ><span class="label">CV</span></a
+      >
+        <span class="label">CV</span></a
       >
     </li>
     <li>
@@ -31,12 +54,12 @@
         href="https://www.linkedin.com/in/cordelia-aurelie-guims-de-medeiros-10955a110/"
         class="icon brands fa-linkedin-f"
         target="_blank"
-        ><span class="label">linkedin</span></a
+        ><span class="label">Linkedin</span></a
       >
     </li>
     <li>
       <a href="#" class="icon brands fa-instagram" target="_blank"
-        ><span class="label">Insta</span></a
+        ><span class="label">Agence</span></a
       >
     </li>
     <li>
@@ -48,29 +71,18 @@
       >
     </li>
   </ul>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
   },
 };
-// function load(){
-// let fileSelect = document.querySelector('fa-cv');
 
-// let fileElem = document.querySelector('fileElem');
-
-// fileSelect.addEventListener('click', function (ev) {
-// if (fileElem) {
-//   fileElem.click(),
-// ev.preventDefault(),
-//   }
-// }),false};
-
-// </script>
+</script>
 
 // <!-- Add "scoped" attribute to limit CSS to this component only -->
 
@@ -81,16 +93,16 @@ export default {
   margin-top: 3.5rem;
 }
 
-#header > *::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  bottom: calc(-3.5rem - 1px);
-  left: calc(50% - 1px);
-  width: 1px;
-  height: calc(3.5rem + 1px);
-  background: #ffffff;
-}
+// #header > *::before {
+//   content: " ";
+//   display: block;
+//   position: absolute;
+//   bottom: calc(-3.5rem - 2px);
+//   left: calc(50% - 4px);
+//   width: 1px;
+//   height: calc(1rem + 14px);
+//   background: #ffffff;
+// }
 
 #header {
   display: flex;
@@ -106,14 +118,41 @@ export default {
   max-width: 100%;
   text-align: center;
 }
-
+// rond logo 3D
+.stage {
+  width: 17.5rem;
+height: 19.5rem;
+  display: inline-block;
+  margin: 20px;
+  perspective: 1200px;
+  perspective-origin: 50% 50%;
+}
+.logo .shadow {
+  position: absolute;
+  // width: 100%;
+  // height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%,
+  rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+  }
+  svg {
+  position: fixed;
+  bottom: 5%;
+  height: 250px;
+  right: 5%;
+  width: 250px;
+  }
 #header .logo {
-  width: 5.5rem;
-  height: 5.5rem;
+  display: block;
+  background: black;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+  width: 10.5rem;
+  height: 10.5rem;
   line-height: 5.5rem;
-  border: solid 1px #ffffff;
+  // border: solid 1px #ffffff;
   border-radius: 100%;
-  margin-top: 0;
+  // margin-top: 0;
 }
 
 #header .content {
@@ -220,11 +259,11 @@ a.router-link-active.router-link-exact-active {
 ul.icons {
   cursor: default;
   list-style: none;
-  padding-left: 0;
+  padding-left: 17px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin: 3rem;
+  margin: 4rem;
 }
 ul.icons li {
   display: inline-block;
@@ -248,5 +287,4 @@ ul.icons li a:hover {
 .fa-instagram {
   margin-left: 7rem;
 }
-
 </style>

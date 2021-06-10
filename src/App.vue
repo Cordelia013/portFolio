@@ -31,10 +31,11 @@ a {
   border-bottom: dotted 1px;
 }
 body {
+  display: flex;
   background: url("/img/bg.jpg" );
   box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 0.15);
   color: #ffffff;
-  width: 100vw;
+  // width: 100vw;
   font-family: "open sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
@@ -108,28 +109,33 @@ h6.titre {
   width: max-content;
   padding-bottom: 0.5rem;
   margin: 0 0 2rem 0;
+  width: 100rem;
+  // width: max-content;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.5rem;
 }
 
-#projets, #contact{
+// #projets, #contact{
 
-transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-padding: 4.5rem 2.5rem 1.5rem 2.5rem;
-position: relative;
-width: 40rem;
-max-width: 100%;
-background-color: rgba(27, 31, 34, 0.85);
-border-radius: 4px;
-}
+// transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+// padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+// position: relative;
+// width: 40rem;
+// max-width: 100%;
+// background-color: rgba(27, 31, 34, 0.85);
+// border-radius: 4px;
+// }
 #about,
 #contact,
 #projects,
 #services {
-  transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+  transition: opacity 0.125s ease-in-out, transform 1.325s ease-in-out;
   padding: 4.5rem 2.5rem 1.5rem 2.5rem;
   position: relative;
-  width: 40rem;
-  max-width: 100%;
-  background-color: rgba(27, 31, 34, 0.85);
+   max-width: 100%;
+  background-color: rgba(20, 21, 22, 0.85);
   box-shadow: 12px 12px 24px #191c20, -12px -12px 24px #353e45;
   border-radius: 4px;
 
@@ -155,8 +161,8 @@ justify-content: space-between;
   justify-content: center;
   position: relative;
   min-height: 100vh;
-  width: 100%;
-  z-index: 3;
+  width: 95vw;
+  // z-index: 3;
 }
 
 #app::before {
