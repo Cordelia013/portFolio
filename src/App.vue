@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import url(./styles/responsive.css);
-@import url(./styles/variables.css);
 
 * {
   margin: 0;

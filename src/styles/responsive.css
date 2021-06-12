@@ -1,16 +1,8 @@
-/* ###### Responsive 360px ###### */
-@media screen and (max-width: 360px) {
-  html {
-    font-size: 10pt;
-  }
-  .image.main {
-    margin: 2rem 0;
-  }
-}
+
 /* ###### Responsive 480px ###### */
 
 @media screen and (max-width: 480px) {
-    body,input,select,textarea {
+    /* body,input,select,textarea {
         font-size:11.5pt
            }
 
@@ -84,14 +76,14 @@
   }
   #main article {
     padding: 3rem 1.5rem 0.5rem 1.5rem;
-  }
+  }*/
   
-}
+} 
 
 /* ###### Responsive 736px ###### */
-@media screen and (max-width: 736px) {
+ @media screen and (max-width: 736px) {
 
-body,input,select,textarea {
+/*body,input,select,textarea {
     line-height:1.5em
        }
 
@@ -147,18 +139,18 @@ body,input,select,textarea {
     width: 2.25rem;
     height: 2.25rem;
     background-size: 14px 14px;
-  }
-}
+  }*/
+} 
 
 @media screen and (max-width: 840px) {
-    body,input,select,textarea {
+    /* body,input,select,textarea {
      font-size:12pt
-    }
+    } */
 }
 /* ###### Responsive 1680px ###### */
 @media screen and (max-width: 1680px) {
 
-body,input,select,textarea {
+/* body,input,select,textarea {
   font-size:13pt
  }
 
@@ -169,5 +161,5 @@ html {
  
 #page {
     padding: 3rem 2rem;
-  }
+  } */
 }

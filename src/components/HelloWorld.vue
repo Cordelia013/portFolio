@@ -79,22 +79,12 @@ export default {
 // <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped lang="scss">
+
 #header > * {
   // transition: opacity 0.325s ease-in-out;
   position: relative;
   // margin-top: 3.5rem;
 }
-
-// #header > *::before {
-//   content: " ";
-//   display: block;
-//   position: absolute;
-//   bottom: calc(-3.5rem - 2px);
-//   left: calc(50% - 4px);
-//   width: 1px;
-//   height: calc(1rem + 14px);
-//   background: #ffffff;
-// }
 
 #header {
   display: flex;
@@ -147,7 +137,6 @@ export default {
   border-radius: 100%;
   // margin-top: 0;
 }
-
 #header .content {
   border-style: solid;
   border-color: #ffffff;
@@ -162,7 +151,6 @@ export default {
   line-height: 2;
   margin: 0 0 2em 0;
 }
-
 #header .text {
   // transition: max-height 0.75s ease, padding 0.75s ease,
   //   opacity 0.325s ease-in-out;
@@ -171,13 +159,11 @@ export default {
   max-height: 40rem;
   overflow: hidden;
 }
-
 h1 {
   font-size: 2.25rem;
   line-height: 1.3;
   letter-spacing: 0.5rem;
 }
-
 #header .nav_middle {
   display: flex;
   margin-bottom: 0;
@@ -186,9 +172,8 @@ h1 {
   border: solid 1px #ffffff;
   border-radius: 5px;
   filter: opacity(59%);
-  -webkit-filter: opacity(59%);
-  -moz-filter: opacity(59%);
-  margin-top: 17px;
+  -webkit-filter: opacity(69%);
+   margin-top: 17px;
 }
 #header .nav_middle a {
   display: block;
@@ -201,7 +186,6 @@ h1 {
   font-size: 0.8rem;
   border-bottom: 0;
 }
-
 a.router-link-active.router-link-exact-active {
   border-left: 0;
   font-size: 16px;
@@ -269,6 +253,7 @@ ul.icons li a {
   display: inline-block;
   line-height: 4rem;
   text-align: center;
+  padding: 5px;
   height: 4rem;
   width: 4rem;
 }
@@ -276,9 +261,66 @@ a:hover {
   border-bottom-color: transparent;
 }
 ul.icons li a:hover {
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(255, 255, 255, 0.13);
 }
 .fa-instagram {
   margin-left: 7rem;
 }
+
+// /* ###### Responsive 380px ###### */
+ @media screen and (max-width: 380px) {
+  .nav_middle {
+    display: block;
+   }
+  .stage {
+    top: 6rem;
+    margin: 15px;
+    height: 16.5rem;
+     }
+  .stage > svg:nth-child(1) {
+    top: -20%;
+   }
+   h1 {
+    font-size: 1.8em;
+    line-height: 1.3;
+    letter-spacing: 0.8rem;
+  }
+  .text > h2:nth-child(2) {
+    width: 58%;
+   position: relative;
+    left: 21%;
+   }
+   .text > p:nth-child(4) {
+    width: 59%;
+    position: relative;
+    left: 20%;
+    margin-top: 4em;
+    padding-top: 2em;
+   }
+      #header .nav_middle {
+    display: block;
+     }
+  #header > * {
+    display: block;
+  }
+  .text > p:nth-child(4) {
+    width: 72%;
+    left: 14%;
+    margin-top: 1em;
+}
+.icons > li:nth-child(2) {
+  position: relative;
+  left: 1rem;
+
+ }
+ .icons > li:nth-child(3) {
+  position: relative;
+  top: 1em;
+ }
+ .icons > li:nth-child(4) {
+  position: relative;
+  right: 3em;
+  top: -3em;
+ }
+ }
 </style>
