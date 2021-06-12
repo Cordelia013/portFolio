@@ -267,8 +267,8 @@ ul.icons li a:hover {
   margin-left: 7rem;
 }
 
-// /* ###### Responsive 380px ###### */
- @media screen and (max-width: 380px) {
+// /* ###### Responsive 360px ###### */
+ @media screen and (max-width: 360px) {
   .nav_middle {
     display: block;
    }
