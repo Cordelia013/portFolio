@@ -97,7 +97,7 @@ export default {
     rgba(0, 0, 0, 0.25) 27%,
     rgba(0, 0, 0, 0) 60%
   );
-  max-width: 100%;
+  width: min-content;
   text-align: center;
 }
 // rond logo 3D
@@ -152,8 +152,6 @@ export default {
   margin: 0 0 2em 0;
 }
 #header .text {
-  // transition: max-height 0.75s ease, padding 0.75s ease,
-  //   opacity 0.325s ease-in-out;
   transition-delay: 0.25s;
   padding: 2rem 3rem;
   max-height: 40rem;
@@ -269,58 +267,75 @@ ul.icons li a:hover {
 
 // /* ###### Responsive 360px ###### */
  @media screen and (max-width: 360px) {
-  .nav_middle {
+.nav_middle {
     display: block;
    }
-  .stage {
+.stage {
     top: 6rem;
     margin: 15px;
     height: 16.5rem;
      }
-  .stage > svg:nth-child(1) {
+.stage > svg:nth-child(1) {
     top: -20%;
    }
-   h1 {
+#header .nav_middle{
+    display: block;
+    margin-top: 51px;
+}
+h1 {
     font-size: 1.8em;
     line-height: 1.3;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0rem;
   }
-  .text > h2:nth-child(2) {
-    width: 58%;
-   position: relative;
-    left: 21%;
-   }
-   .text > p:nth-child(4) {
-    width: 59%;
-    position: relative;
-    left: 20%;
-    margin-top: 4em;
-    padding-top: 2em;
-   }
-      #header .nav_middle {
-    display: block;
-     }
-  #header > * {
-    display: block;
-  }
-  .text > p:nth-child(4) {
-    width: 72%;
-    left: 14%;
-    margin-top: 1em;
+.text>h2:nth-child(2) {
+ width:55%;
+ position:relative;
+ left:24%;
 }
-.icons > li:nth-child(2) {
-  position: relative;
-  left: 1rem;
+#header .nav_middle{
+ display:block;
+ }
+.fa-instagram{
+ margin-left:0rem;
+}
+ul.icons li{
+ padding: 0 0.8em 0 0;
+}
 
  }
- .icons > li:nth-child(3) {
-  position: relative;
-  top: 1em;
- }
- .icons > li:nth-child(4) {
-  position: relative;
-  right: 3em;
-  top: -3em;
- }
- }
+ /* ###### Responsive 480px ###### */
+
+@media screen and (max-width: 480px) {
+.stage{
+    top:0;
+  }
+.text > p:nth-child(4) {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+width: 19em;
+margin-left: 2em;
+padding: 2%;
+margin-top: 3em;
+}
+#header .nav_middle{
+    display: block;
+  }
+    }
+/* ###### Responsive 736px ###### */
+ @media screen and (max-width: 736px) {
+
+}
+/* ###### Responsive 736px ###### */
+ @media screen and (max-width: 736px) {
+
+}
+@media screen and (max-width: 840px) {
+    /* body,input,select,textarea {
+     font-size:12pt
+    } */
+}
+/* ###### Responsive 1680px ###### */
+@media screen and (max-width: 1680px) {
+}
 </style>
