@@ -148,7 +148,7 @@ section {
 
 // card
 .card {
-  padding: 30px;
+  paddin
   border-radius: 21px;
   background: linear-gradient(145deg, #29292c, #303134);
   box-shadow: 15px 15px 39px #212224, -15px -15px 39px #393a3e;

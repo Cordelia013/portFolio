@@ -73,17 +73,17 @@
 </script>
 
 <style scoped lang="scss">
-
 button {
   border: 1px solid #fff;
-  width: 4em;
+  width: 6em;
+  text-align: center;
   margin-top: 10px;
   padding: 10px 20px;
   font-weight: bold;
   background:transparent;
   cursor: pointer;
   color: green;
-
+ display: flex;
 }
 </style>
 

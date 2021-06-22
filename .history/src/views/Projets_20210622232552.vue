@@ -1,16 +1,19 @@
 <template>
+
   <div class="body">
     <article id="projets" style="" class="active">
-      <div class="modal-header">
-        <h2 class="titre">Mes projets</h2>
-        <router-link to="/">X</router-link>
+        <div class="modal-header ">
+          <h2 class="titre">Mes projets</h2>
+          <router-link to="/">X</router-link>
+
       </div>
 
       <div class="grid-container">
+
         <section class="card card1">
           <h4>calendrier html/css</h4>
           <a href="https://naughty-lamport-ded569.netlify.app">
-            <img src="/img/tableauHTML_CSS.png" alt="calendrier html/css" />
+          <img src="/img/tableauHTML_CSS.png" alt="calendrier html/css"/>
           </a>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -20,7 +23,7 @@
 
         <section class="card card2">
           <h4>Projets Actutu</h4>
-          <br />
+          <br>
           <a href="https://friendly-nightingale-653f36.netlify.app">
             <img src="/img/actutu.png " alt="Projets Actutu" />
           </a>
@@ -40,7 +43,8 @@
             distinctio.
           </p>
         </section>
-      </div>
+
+        </div>
     </article>
   </div>
 
@@ -65,6 +69,7 @@
       </div>
     </article>
   </div> -->
+
 </template>
 
 <script>
@@ -73,6 +78,7 @@
 // import frontend from '../components/filterProject/frontend.vue';
 // import fullStack from '../components/filterProject/fullStack.vue';
 // import mobile from '../components/filterProject/mobile.vue';
+
 </script>
 
 <style lang="scss" scoped>
@@ -137,8 +143,8 @@ section {
 }
 
 .btn:hover {
-  background: #a298a1;
-  color: #213550;
+  background:#A298A1;
+  color:#213550;
 }
 
 // .btn.active {
@@ -147,10 +153,7 @@ section {
 // }
 
 // card
-.card {
-  padding: 30px;
-  border-radius: 21px;
-  background: linear-gradient(145deg, #29292c, #303134);
-  box-shadow: 15px 15px 39px #212224, -15px -15px 39px #393a3e;
+.card{
+  height: 50;
 }
 </style>

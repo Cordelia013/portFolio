@@ -144,7 +144,7 @@ width: 100%;
 
 .modal-header{
   display: flex;
-  justify-content: space-between;
+justify-content: space-between;
 
    > a {
  color: #a7b9d1;

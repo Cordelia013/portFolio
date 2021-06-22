@@ -71,10 +71,9 @@ textarea {
   color: inherit;
   display: block;
   outline: 0;
-  margin: 4px;
   padding: 0 1rem;
   text-decoration: none;
-  width: 86%;
+  width: 100%;
 }
 input[type="text"],
 input[type="password"],
@@ -130,11 +129,12 @@ h6.titre {
 #contact,
 #projets,
 #services {
-  transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+  transition: opacity 0.125s ease-in-out, transform 1.325s ease-in-out;
   padding: 4.5rem 2.5rem 1.5rem 2.5rem;
-  width: 50rem;
-  // max-width: 50%;
-  background-color: rgba(27, 31, 34, 0.85);
+  position: relative;
+   max-width: 100%;
+  background-color: rgba(20, 21, 22, 0.85);
+  box-shadow: 12px 12px 24px #191c20, -12px -12px 24px #353e45;
   border-radius: 4px;
 
   > img {
@@ -144,7 +144,7 @@ width: 100%;
 
 .modal-header{
   display: flex;
-  justify-content: space-between;
+justify-content: space-between;
 
    > a {
  color: #a7b9d1;

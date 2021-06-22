@@ -187,7 +187,7 @@ font-family:'Bad Script', cursive;
 }
 #header .nav_middle a {
   display: block;
-  min-width: 11.8rem;
+  min-width: 10.8rem;
   height: 2.75rem;
   line-height: 2.75rem;
   padding: 0 1.25rem 0 1.45rem;

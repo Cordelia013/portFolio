@@ -71,10 +71,9 @@ textarea {
   color: inherit;
   display: block;
   outline: 0;
-  margin: 4px;
   padding: 0 1rem;
   text-decoration: none;
-  width: 86%;
+  width: 100%;
 }
 input[type="text"],
 input[type="password"],
@@ -144,7 +143,7 @@ width: 100%;
 
 .modal-header{
   display: flex;
-  justify-content: space-between;
+justify-content: space-between;
 
    > a {
  color: #a7b9d1;

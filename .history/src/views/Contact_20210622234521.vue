@@ -31,6 +31,16 @@
       </a>
       <br>
       <br>
+
+      <!-- <h1 class="has-text-weight-bold is-size-3">
+        Twitter:
+      </h1>
+      <a class="is-size-4" href="https://twitter.com/ASilvaDomingues">
+        <fa :icon="['fab', 'twitter']"></fa>
+        @ASilvaDomingues
+      </a>
+      <br>
+      <br> -->
     </div>
 
     <div class="column is-6 has-text-left">
@@ -74,18 +84,6 @@
 
 <style scoped lang="scss">
 
-button {
-  border: 1px solid #fff;
-  width: 4em;
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-weight: bold;
-  background:transparent;
-  cursor: pointer;
-  color: green;
-
-}
-</style>
 
 // form {
 //   margin: 0 0 2rem 0;

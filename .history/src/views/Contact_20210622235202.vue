@@ -83,7 +83,9 @@ button {
   background:transparent;
   cursor: pointer;
   color: green;
-
+ display: flex;
+justify-content: center;
+align-items: center;
 }
 </style>
 
