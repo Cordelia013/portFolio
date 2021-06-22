@@ -14,7 +14,7 @@
             <button class="raise">PHOTOSHOP</button>
             <button class="fill">DISCORD/ZOOM/SLACK</button>
             <button class="up">TRELLO</button>
-            <button class="offset">MARVEL_APP</button>
+            <button class="offset">MARVEL</button>
             <button class="raise">FIGMA</button>
             <button class="close">GSUITE</button>
             <button class="up">DRAW.IO</button>

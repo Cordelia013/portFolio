@@ -14,14 +14,12 @@
             <button class="raise">PHOTOSHOP</button>
             <button class="fill">DISCORD/ZOOM/SLACK</button>
             <button class="up">TRELLO</button>
-            <button class="offset">MARVEL_APP</button>
+            <button class="offset">MARVEL</button>
             <button class="raise">FIGMA</button>
             <button class="close">GSUITE</button>
-            <button class="up">DRAW.IO</button>
 
             <h3>Mes technos MOBILES</h3>
             <button class="offset">SWIFT 4</button>
-            <button class="up">ANDROID_STUDIO</button>
             <button class="raise">FLUTTER</button>
             <button class="pulse">REACT NATIVE</button>
 
@@ -30,7 +28,7 @@
             <button class="fill">APACHE</button>
             <button class="pulse">NPM/YARN</button>
             <button class="up">GIT</button>
-            <button class="up">GITHUB/GITLAB</button>
+            <button class="up">GITHUB</button>
           </section>
           <section class="droite">
             <h3>Mes technos FRONTS</h3>

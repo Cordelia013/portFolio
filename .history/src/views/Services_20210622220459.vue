@@ -14,10 +14,10 @@
             <button class="raise">PHOTOSHOP</button>
             <button class="fill">DISCORD/ZOOM/SLACK</button>
             <button class="up">TRELLO</button>
-            <button class="offset">MARVEL_APP</button>
+            <button class="offset">MARVEL</button>
             <button class="raise">FIGMA</button>
             <button class="close">GSUITE</button>
-            <button class="up">DRAW.IO</button>
+             <button class="up">TRELLO</button>
 
             <h3>Mes technos MOBILES</h3>
             <button class="offset">SWIFT 4</button>
