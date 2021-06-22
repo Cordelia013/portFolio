@@ -78,7 +78,6 @@
 <style lang="scss" scoped>
 .grid-container {
   display: grid;
-  height: 35rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 16px 21px;
@@ -89,7 +88,7 @@
     ". . .";
 }
 section {
-  border: 1px solid rgb(59, 39, 39);
+  border: 1px solid black;
 
   > h4,
   p {
@@ -105,32 +104,38 @@ section {
 }
 // boutton filtre
 
-// #myBtnContainer {
-//   display: flex;
-// }
-// .filterDiv {
-//   background-color: #2196f3;
-//   // color: #ffffff;
-//   width: 100px;
-//   line-height: 100px;
-//   text-align: center;
-//   margin: 2px;
-//   display: none;
-// }
+#myBtnContainer {
+  display: flex;
+}
+.filterDiv {
+  background-color: #2196f3;
+  // color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
 
-// .show {
-//   display: block;
-// }
+.show {
+  display: block;
+}
 
-// .container {
-//   margin-top: 20px;
-//   overflow: hidden;
-// }
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
 
 .card:hover {
   background: #a298a1;
   color: #213550;
 }
+
+// .btn.active {
+//   background-color: #666;
+//   color: rgb(87, 5, 163);
+// }
+
 // card
 .card {
   padding: 30px;

@@ -78,7 +78,6 @@
 <style lang="scss" scoped>
 .grid-container {
   display: grid;
-  height: 35rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 16px 21px;
@@ -89,19 +88,19 @@
     ". . .";
 }
 section {
-  border: 1px solid rgb(59, 39, 39);
+  border: 1px solid black;
 
   > h4,
   p {
     text-align: center;
   }
 
-  > a {
-    > img {
-      width: 100%;
-      height: 7rem;
-    }
-  }
+  // > a {
+  //   > img {
+  //     width: 100%;
+  //     height: 7rem;
+  //   }
+  // }
 }
 // boutton filtre
 

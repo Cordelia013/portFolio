@@ -78,7 +78,6 @@
 <style lang="scss" scoped>
 .grid-container {
   display: grid;
-  height: 35rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 16px 21px;
@@ -89,7 +88,7 @@
     ". . .";
 }
 section {
-  border: 1px solid rgb(59, 39, 39);
+  border: 1px solid rgb(65, 61, 61);
 
   > h4,
   p {
