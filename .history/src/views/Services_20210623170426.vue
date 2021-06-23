@@ -63,20 +63,20 @@
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
-#services {
-  // transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-  padding: 4.5rem 2.5rem 1.5rem 2.5rem;
-  width: 60rem;
-  height: 40rem;
-  // max-width: 50%;
-  // background-color: rgba(27, 31, 34, 0.85);
-  // border-radius: 4px;
-}
+// #services {
+//   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+//   padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+//   width: 50rem;
+//   height: 40rem;
+//   // max-width: 50%;
+//   background-color: rgba(27, 31, 34, 0.85);
+//   border-radius: 4px;
+// }
 
 #section {
   position: absolute;
   display: flex;
-  top: 25%;
+  // top: 20%;
   height: 70vh;
   width: 55vw;
 }
